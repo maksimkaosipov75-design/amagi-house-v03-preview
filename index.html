@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Десять дневных PNG-рендеров эталонного дома Amagi Mystery v03 и сравнение с v02.">
+  <title>Amagi Mystery · Дом v03</title>
+  <style>
+    :root { color-scheme: dark; --bg:#171a1b; --card:#222627; --line:#3a4140; --ink:#f0ede5; --muted:#c5cac4; --warm:#e4cda6; }
+    * { box-sizing:border-box; }
+    html { scroll-padding-top:1rem; }
+    body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.5 system-ui,sans-serif; }
+    main { width:min(100% - 2rem, 76rem); margin:auto; padding:clamp(2rem,7vw,5rem) 0 3rem; }
+    header { margin:0 0 2rem; }
+    .eyebrow { color:var(--warm); letter-spacing:.16em; text-transform:uppercase; font-size:.75rem; font-weight:700; margin:0 0 .65rem; }
+    h1 { font-size:clamp(2.25rem,5.5vw,4.45rem); font-weight:630; line-height:1.04; letter-spacing:-.045em; margin:0 0 .8rem; }
+    .intro { color:var(--muted); margin:0; max-width:42rem; }
+    nav { display:flex; flex-wrap:wrap; gap:.55rem; margin-top:1.2rem; }
+    nav a { border:1px solid var(--line); border-radius:999px; padding:.36rem .8rem; }
+    h2 { font-size:clamp(1.45rem,3vw,2rem); font-weight:630; letter-spacing:-.026em; margin:2.4rem 0 .9rem; }
+    .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:clamp(.75rem,2vw,1.4rem); }
+    figure { margin:0; border:1px solid var(--line); border-radius:.65rem; background:var(--card); overflow:hidden; }
+    .wide { grid-column:1 / -1; }
+    img { display:block; width:100%; height:auto; aspect-ratio:4 / 3; background:#777d7a; }
+    .image { display:block; cursor:zoom-in; }
+    figcaption { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:.25rem 1rem; padding:.7rem .9rem; }
+    figcaption span { font-weight:620; }
+    a { color:var(--warm); text-underline-offset:.18em; }
+    nav a { text-decoration:none; }
+    a:hover { color:#fff0d4; }
+    a:focus-visible { outline:2px solid #fff0d4; outline-offset:3px; }
+    .image:focus-visible { outline-offset:-4px; }
+    footer { margin-top:2rem; color:var(--muted); font-size:.88rem; }
+    .note { color:var(--muted); max-width:50rem; margin:0 0 1rem; }
+    .compare img { aspect-ratio:4 / 3; }
+    @media (max-width:43rem) {
+      main { width:calc(100% - 1.25rem); }
+      .grid { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main id="top">
+    <header>
+      <p class="eyebrow">Amagi Mystery · Blender</p>
+      <h1>Дом Амаги v03</h1>
+      <p class="intro">Десять дневных рендеров эталонного дома. Нажмите на изображение, чтобы открыть оригинал PNG размером 1440 × 1080.</p>
+      <nav aria-label="Разделы галереи">
+        <a href="#plot">Участок</a>
+        <a href="#facades">Фасады</a>
+        <a href="#details">Детали</a>
+        <a href="#comparison">Сравнение v02 и v03</a>
+      </nav>
+    </header>
+    <section id="plot" aria-labelledby="plot-title">
+      <h2 id="plot-title">Дом в окружении</h2>
+      <p class="note">Отдельный тестовый участок с каменной дорожкой, клёном и низкими посадками.</p>
+      <div class="grid">
+        <figure class="wide">
+          <a class="image" href="images/10-game-view.png" aria-label="Игровой ракурс. Открыть PNG в полном размере">
+            <img src="images/10-game-view.png" alt="Вид на дом со стороны садовой дорожки, с клёном и посадками перед фасадом." width="1440" height="1080" fetchpriority="high" decoding="async">
+          </a>
+          <figcaption><span>Игровой ракурс</span><a href="images/10-game-view.png">Открыть PNG ↗</a></figcaption>
+        </figure>
+        <figure class="wide">
+          <a class="image" href="images/09-plot.png" aria-label="Дом с тестовым участком. Открыть PNG в полном размере">
+            <img src="images/09-plot.png" alt="Весь участок с дорожкой, клёном, камнями и небольшими посадками." width="1440" height="1080" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Дом с тестовым участком</span><a href="images/09-plot.png">Открыть PNG ↗</a></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id="facades" aria-labelledby="facades-title">
+      <h2 id="facades-title">Архитектура</h2>
+      <div class="grid">
+        <figure class="wide">
+          <a class="image" href="images/05-three-quarter.png" aria-label="Общий вид ¾. Открыть PNG в полном размере">
+            <img src="images/05-three-quarter.png" alt="Дом в три четверти при мягком дневном свете на нейтральном фоне." width="1440" height="1080" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Общий вид ¾</span><a href="images/05-three-quarter.png">Открыть PNG ↗</a></figcaption>
+        </figure>
+        <figure>
+          <a class="image" href="images/01-front.png" aria-label="Передний фасад. Открыть PNG в полном размере">
+            <img src="images/01-front.png" alt="Фасад с навесом, деревянными створками, большим окном, крыльцом и ограждением." width="1440" height="1080" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Передний фасад</span><a href="images/01-front.png">Открыть PNG ↗</a></figcaption>
+        </figure>
+        <figure>
+          <a class="image" href="images/02-rear.png" aria-label="Задний фасад. Открыть PNG в полном размере">
+            <img src="images/02-rear.png" alt="Остеклённый проём и служебная створка с небольшим металлическим козырьком." width="1440" height="1080" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Задний фасад</span><a href="images/02-rear.png">Открыть PNG ↗</a></figcaption>
+        </figure>
+        <figure>
+          <a class="image" href="images/03-left.png" aria-label="Левый фасад. Открыть PNG в полном размере">
+            <img src="images/03-left.png" alt="Левый боковой фасад, оконные откосы и свес черепичной крыши." width="1440" height="1080" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Левый фасад</span><a href="images/03-left.png">Открыть PNG ↗</a></figcaption>
+        </figure>
+        <figure>
+          <a class="image" href="images/04-right.png" aria-label="Правый фасад. Открыть PNG в полном размере">
+            <img src="images/04-right.png" alt="Правый боковой фасад, водосток, оконные отливы и наружный блок." width="1440" height="1080" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Правый фасад</span><a href="images/04-right.png">Открыть PNG ↗</a></figcaption>
+        </figure>
+        <figure class="wide">
+          <a class="image" href="images/06-top.png" aria-label="Вид сверху. Открыть PNG в полном размере">
+            <img src="images/06-top.png" alt="Ортографический вид крыши, стыков скатов, навеса и входной зоны." width="1440" height="1080" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Вид сверху</span><a href="images/06-top.png">Открыть PNG ↗</a></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id="details" aria-labelledby="details-title">
+      <h2 id="details-title">Вход и материалы</h2>
+      <div class="grid">
+        <figure class="wide">
+          <a class="image" href="images/07-entry.png" aria-label="Вход и двери. Открыть PNG в полном размере">
+            <img src="images/07-entry.png" alt="Крупный план деревянных раздвижных створок, направляющих, ступеней и плитки." width="1440" height="1080" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Вход и двери</span><a href="images/07-entry.png">Открыть PNG ↗</a></figcaption>
+        </figure>
+        <figure class="wide">
+          <a class="image" href="images/08-roof-windows.png" aria-label="Крыша, окна и материалы. Открыть PNG в полном размере">
+            <img src="images/08-roof-windows.png" alt="Крупный план черепицы, отливов, окон и стыка штукатурки с кедром." width="1440" height="1080" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>Крыша, окна и материалы</span><a href="images/08-roof-windows.png">Открыть PNG ↗</a></figcaption>
+        </figure>
+      </div>
+    </section>
+    <section id="comparison" aria-labelledby="comparison-title">
+      <h2 id="comparison-title">Сравнение v02 и v03</h2>
+      <p class="note">Один ракурс и одинаковое кадрирование. В v03 свет теплее, тени прохладнее, а на черепице, штукатурке и кедре заметнее вариации оттенка. Добавлены отливы и уточнены окончания стыков кровли.</p>
+      <div class="grid compare">
+        <figure>
+          <a class="image" href="comparison/05-three-quarter-v02.png" aria-label="v02 · исходная версия. Открыть PNG в полном размере">
+            <img src="comparison/05-three-quarter-v02.png" alt="Дом v02 под углом три четверти, исходные материалы и студийное освещение." width="1760" height="1320" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>v02 · исходная версия</span><a href="comparison/05-three-quarter-v02.png">Открыть PNG ↗</a></figcaption>
+        </figure>
+        <figure>
+          <a class="image" href="images/05-three-quarter.png" aria-label="v03 · художественная доработка. Открыть PNG в полном размере">
+            <img src="images/05-three-quarter.png" alt="Дом в три четверти при мягком дневном свете на нейтральном фоне." width="1440" height="1080" loading="lazy" decoding="async">
+          </a>
+          <figcaption><span>v03 · художественная доработка</span><a href="images/05-three-quarter.png">Открыть PNG ↗</a></figcaption>
+        </figure>
+      </div>
+    </section>
+    <footer>Модель <code>Amagi_Residential_House_v03.blend</code> · <a href="#top">Наверх ↑</a></footer>
+  </main>
+</body>
+</html>
